@@ -5,8 +5,9 @@ Getting Started
 If you haven't already, make sure you are familiar with Custom Runtimes in the
 [App Engine Managed VM documentation](https://cloud.google.com/appengine/docs/managed-vms/custom-runtimes).
 
-You must have the Google Cloud SDK, with the Managed VM component installed.
-We will assume that the SDK is available on your command line as `$ gcloud`.
+You must have the [Google Cloud SDK](https://cloud.google.com/sdk/), with the
+Managed VM component installed. We will assume that the SDK is available on
+your command line as `$ gcloud`.
 
 You must also [install
 Docker](https://docs.docker.com/installation/#installation) on your
@@ -54,6 +55,15 @@ Serving Static Files
 You can use this demo to serve static files from a managed vm. Just add files
 to the www directory and they'll be added to the `/usr/share/nginx/www`
 directory and served from your app.
+
+Next Steps
+==========
+
+This is intended to provide a minimal example of a Managed VM runtime.
+Obviously, serving static files isn't something you would need a VM for.  If
+you actually do want to use nginx as a front-end for an application, you should
+take a look at the nginx docs for [information on how to use
+FastCGI](http://wiki.nginx.org/SimpleCGI).
 
 License
 =========
